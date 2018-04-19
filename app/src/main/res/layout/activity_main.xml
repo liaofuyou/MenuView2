@@ -6,13 +6,18 @@
     android:layout_height="match_parent"
     tools:context="me.ajax.menuview2.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#25c6fc"
+        android:layout_height="match_parent">
+
+
+        <me.ajax.menuview2.widget.MenuView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
