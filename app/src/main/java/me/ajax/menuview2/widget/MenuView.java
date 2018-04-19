@@ -313,15 +313,15 @@ public class MenuView extends ViewGroup {
             int col = currClickSubViewIndex[1];
 
             float a1 = -180 + (45 * (col + 1));
-            float a2 = -180 + (30 * (currStep + 1));
-            if (currStep >= 2) a2 += 30;
+            float a2 = -130 + (20 * currStep);
+            if (currStep >= 2) a2 += 20;
             polarTransaction(subMenuViews[row][col], dp2Dx(130), a1, dp2Dx(220), a2, animatedFraction);
         }
 
         //已经选择了的View
         for (int i = 0; i < selectViews.size(); i++) {
-            float a = -180 + (30 * (i + 1));
-            if (i >= 2) a += 30;
+            float a = -130 + (20 * i);
+            if (i >= 2) a += 20;
             viewLayoutByPolar(selectViews.get(i), dp2Dx(220), a);
         }
     }
