@@ -63,7 +63,7 @@ public class LoadingLayer extends ViewGroup {
         progressBar.setVisibility(INVISIBLE);
 
         animator = ValueAnimator.ofFloat(0, 1);
-        animator.setDuration(600);
+        animator.setDuration(500);
         animator.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationStart(Animator animation) {
@@ -86,7 +86,7 @@ public class LoadingLayer extends ViewGroup {
                             isReverse = true;
                             animator.reverse();
                         }
-                    }, 1000);
+                    }, 500);
                 } else {
                     bottomButton.setVisibility(VISIBLE);
                     if (animatorEndListener != null) {

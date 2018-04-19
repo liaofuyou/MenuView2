@@ -71,7 +71,7 @@ public class MenuView extends ViewGroup {
 
 
         animator = ValueAnimator.ofFloat(0, 1);
-        animator.setDuration(600);
+        animator.setDuration(500);
         //animator.setInterpolator(new BounceInterpolator());
         animator.addListener(new AnimatorListenerAdapter() {
             @Override
